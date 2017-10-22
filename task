@@ -1,0 +1,16 @@
+
+Poniżej znajdzie Pani zadanie rekrutacyjne. Proszę o jego wykonanie i przesłanie źródeł.
+
+Aplikacja przetwarzająca transakcje walutowe. Lista wymagań:
+ 1. wyświetlanie i definiowanie przelicznika walutowego (1 EURO = x PLN)
+ 2. dodawanie transakcji walutowej: definiowana nazwa i kwota w euro
+ 3. lista dodanych transakcji walutowych: wyświetlanie dodanych wcześniej transakcji (nazwa, kwota w euro, automatycznie wyliczona kwota w PLN)
+ 4. automatyczne przeliczanie kwot w PLN dla wcześniej dodanych transakcji po zmianie przelicznika walutowego
+ 5. usuwanie transakcji z listy
+ 6. suma wszystkich transakcji
+ 7. wyświetlanie osobno, obok listy, transakcji o największej kwocie (nazwa, kwota w PLN, kwota w euro)
+ 8. zaokrąglanie wartości do 2 miejsc po przecinku
+ 9. wszystkie ww. informacje widoczne jednocześnie na ekranie
+ 10. odświeżanie danych w momencie modyfikacji
+ 11. Aplikacja powinna zostać napisana za pomocą czystego JavaScript'u, dopuszczalne jest ewentualne użycie bibliotek jQuery i RequireJS
+ 12. wymagane wsparcie przeglądarek: najnowszy Chrome lub Firefox

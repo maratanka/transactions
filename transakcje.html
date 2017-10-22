@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Transactions List</title>
+	<link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body>
+
+	<div id="convert" class="header">
+	  <h1>Euro rate: 1 €</h1>
+	  <input onchange="euroCount()" type="number" id="euroRate" placeholder="PLN">
+	</div>
+
+	<div id="myDIV" class="header">
+	  <h2>My Transactions List</h2>
+	  <input type="text" id="transactionName" placeholder="Title of transaction">
+	  <input type="number" id="tranactionValue" placeholder="Value in €">
+	  <button onclick="newTransaction()" class="addBtn">Add</button>
+	</div>
+
+	<div>
+		<table id="myTransactions">
+			<tr>
+				<th>Name of transaction</th>
+				<th>Amount</th>
+				<th>Amount in PLN</th>
+			</tr>
+			<tr>
+				<td>Bootcamp</td>
+				<td>1000</td>
+				<td>4000</td>
+			</tr>
+		</table>
+	</div>
+
+<script type="text/javascript" src="transakcje.js"></script>
+
+</body>
+</html>

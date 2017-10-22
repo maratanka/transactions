@@ -1,0 +1,93 @@
+ body {
+  margin: 0;
+  min-width: 250px;
+}
+
+h1, h2 {
+   margin:5px;
+}
+
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+td, th {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: #f9f9f9;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Style the header */
+.header {
+  background-color: grey;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  border: 1px solid black;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  margin: 2px;
+}
+
+#euroRate {
+  border: 1px solid black;
+  width: 30%;
+  padding: 10px;
+  float: center;
+  font-size: 16px;
+  margin: 2px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  border: 1px solid black;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.addBtn:hover {
+  background-color: green;
+}

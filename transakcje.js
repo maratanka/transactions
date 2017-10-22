@@ -1,0 +1,80 @@
+
+//onchange event
+function euroCount() {
+	var inputRate = document.getElementById("euroRate").value;
+	var inputValue = document.getElementById("tranactionValue").value;
+	var plnValue = inputRate * inputValue;
+  var textPlnValue = document.createTextNode(plnValue);
+  var tr = document.createElement("tr");
+  var td3 = document.createElement("td");
+
+	var table = document.getElementById("myTransactions");
+	for (var i = 0, row; row = table.rows[i]; i++) {
+		//plnValue = inputRate * inputValue;
+		td3.appendChild(textPlnValue);
+	    tr.appendChild(td3);
+	  } 
+}
+
+// Create a new transaction when clicking on the "Add" button
+function newTransaction() {
+  var tr = document.createElement("tr");
+  var td = document.createElement("td");
+  var td2 = document.createElement("td");
+  var td3 = document.createElement("td");
+  var inputName = document.getElementById("transactionName").value;
+  var inputValue = document.getElementById("tranactionValue").value;
+  var inputRate = document.getElementById("euroRate").value;
+  var textName = document.createTextNode(inputName);
+  var textValue = document.createTextNode(inputValue);
+  var plnValue = inputRate * inputValue;
+  var textPlnValue = document.createTextNode(plnValue);
+
+
+  td.appendChild(textName);
+  if (inputName === '') {
+    alert("You must write something!");
+  } else {
+  	tr.appendChild(td);
+  }
+  
+  td2.appendChild(textValue);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    tr.appendChild(td2);
+  }
+
+  td3.appendChild(textPlnValue);
+  tr.appendChild(td3); 
+
+  document.getElementById("tranactionValue").value = "";
+  document.getElementById("transactionName").value = "";
+  document.getElementById("myTransactions").appendChild(tr);
+
+ 
+ // Create a "close" button and append it to each list item
+	var table = document.getElementById("myTransactions");
+	for (var i = 1, row; row = table.rows[i]; i++) {
+	  var span = document.createElement("SPAN");
+	  var txt = document.createTextNode("\u00D7");
+	  span.className = "close";
+	  span.appendChild(txt);
+	  row.appendChild(span);
+	}
+
+	// Click on a close button to hide the current list item
+	var close = document.getElementsByClassName("close");
+	var i;
+	for (i = 0; i < close.length; i++) {
+	  close[i].onclick = function() {
+	    var div = this.parentElement;
+	    div.style.display = "none";
+	  }
+	}
+}
+
+
+
+
+ 
